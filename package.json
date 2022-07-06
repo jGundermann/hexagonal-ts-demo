@@ -1,5 +1,5 @@
 {
-  "name": "nest-hexa",
+  "name": "hexagonal-ts",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,13 +7,18 @@
     "start": "node dist/index.js",
     "start:dev": "tsc --watch & nodemon -q -w dist dist/index.js",
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "format": "prettier --write src/**/*.ts"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.13",
+    "@types/mocha": "^9.1.1",
+    "mocha": "^10.0.0",
     "nodemon": "^2.0.19",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.8.2",
     "typescript": "^4.7.4"
   },
   "dependencies": {
